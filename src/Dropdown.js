@@ -20,6 +20,9 @@ const Dropdown = (props) => {
         onClick={buttonClickHandler}
         className="dropdown-btn"
         value={props.selected}
+        onMouseEnter={(e) => {
+          setIsActive(true);
+        }}
       >
         Choose Option
       </div>
